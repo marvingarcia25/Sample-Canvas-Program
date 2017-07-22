@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CreditSuisseCodingChallenge\SimpleCanvasProgram.csproj" />
+    <ProjectReference Include="..\SimpleCanvasProgram\SimpleCanvasProgram.csproj" />
   </ItemGroup>
 
   <ItemGroup>

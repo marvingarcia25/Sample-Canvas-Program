@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleCanvasProgram", "CreditSuisseCodingChallenge\SimpleCanvasProgram.csproj", "{B7785BB7-5CCE-4F20-AFC6-470FD74352B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleCanvasProgram", "SimpleCanvasProgram\SimpleCanvasProgram.csproj", "{B7785BB7-5CCE-4F20-AFC6-470FD74352B1}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleCanvasProgramTests", "Test\SimpleCanvasProgramTests.csproj", "{BBF672CD-26E6-42C2-B3E7-2314FA660A21}"
 EndProject
