@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using CreditSuisseCodingChallenge.Models;
+using SimpleCanvasProgram.Models;
 
-namespace CreditSuisseCodingChallenge.Processes
+namespace SimpleCanvasProgram.Processes
 {
     public class CommandAnalyzer
     {

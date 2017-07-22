@@ -1,11 +1,11 @@
 ﻿using System;
 using Microsoft.Extensions.Configuration;
-using CreditSuisseCodingChallenge.Models;
-using CreditSuisseCodingChallenge.Processes;
+using SimpleCanvasProgram.Models;
+using SimpleCanvasProgram.Processes;
 using System.IO;
 
 
-namespace CreditSuisseCodingChallenge
+namespace SimpleCanvasProgram
 {
     class Program
     {

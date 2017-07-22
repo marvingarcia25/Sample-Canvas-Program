@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Text;
 using System.IO;
-using CreditSuisseCodingChallenge.Models;
+using SimpleCanvasProgram.Models;
 using Microsoft.Extensions.Configuration;
 
-namespace CreditSuisseCodingChallenge.Processes
+namespace SimpleCanvasProgram.Processes
 {
     public class CoreProcesses
     {

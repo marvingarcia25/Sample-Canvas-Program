@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CreditSuisseCodingChallenge.Models
+namespace SimpleCanvasProgram.Models
 {
     public class Canvas
     {

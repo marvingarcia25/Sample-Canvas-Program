@@ -1,9 +1,9 @@
 using System;
 using Xunit;
-using CreditSuisseCodingChallenge.Models;
-using CreditSuisseCodingChallenge.Processes;
+using SimpleCanvasProgram.Models;
+using SimpleCanvasProgram.Processes;
 
-namespace CreditSuisseCodingChallengeTests
+namespace SimpleCanvasProgramTests
 {
     public class CanvasTests
     {
