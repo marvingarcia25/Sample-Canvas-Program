@@ -100,3 +100,4 @@ In a nutshell, the program work as follows:
 ## Limitiations
  * The maximum width of the canvas was set to 77 in the app-settings.json file to have a better rendering when used via command prompt.
  * Lines and Rectangles will be drawn using "X" as default.
+ * No logging yet
