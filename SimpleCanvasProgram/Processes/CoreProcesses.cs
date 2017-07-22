@@ -73,27 +73,35 @@ namespace SimpleCanvasProgram.Processes
             return createdCanvas;
         }
 
-        public Canvas BucketFill(int x, int y, char mchar,  Canvas createdCanvas)
+        public Canvas BucketFillUtil(int x, int y, char oldchar, char mchar,  Canvas createdCanvas)
         {
-        		if(createdCanvas.CanvasBody[y,x] != 0) {
+        		if(createdCanvas.CanvasBody[y,x] != oldchar) {
         			return createdCanvas;
         		}
 
         		if(x > 0 || x< createdCanvas.Height || y> 0 || y< createdCanvas.Width)
                 {
-        			if((int) createdCanvas.CanvasBody[y, x] == 0)
+        			if(createdCanvas.CanvasBody[y, x] == oldchar)
                         createdCanvas.CanvasBody[y, x] = mchar;
 
-                    createdCanvas = BucketFill(x+1, y, mchar, createdCanvas);
+                    createdCanvas = BucketFillUtil(x+1, y, oldchar, mchar, createdCanvas);
 
-                    createdCanvas = BucketFill(x-1, y, mchar, createdCanvas);
+                    createdCanvas = BucketFillUtil(x-1, y, oldchar, mchar, createdCanvas);
 
-                    createdCanvas = BucketFill(x, y-1, mchar, createdCanvas);
+                    createdCanvas = BucketFillUtil(x, y-1, oldchar, mchar, createdCanvas);
 
-                    createdCanvas = BucketFill(x, y+1, mchar, createdCanvas);
+                    createdCanvas = BucketFillUtil(x, y+1, oldchar, mchar, createdCanvas);
 
                 
                 }
+            return createdCanvas;
+        }
+
+        public Canvas BucketFill(int x, int y, char mchar, Canvas createdCanvas)
+        {
+            char oldChar = createdCanvas.CanvasBody[y, x];
+            BucketFillUtil(x, y, oldChar, mchar, createdCanvas);
+
             return createdCanvas;
         }
 

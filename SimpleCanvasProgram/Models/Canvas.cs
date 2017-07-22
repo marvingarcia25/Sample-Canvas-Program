@@ -8,7 +8,7 @@ namespace SimpleCanvasProgram.Models
     {
         public int Width;
         public int Height;
-        public char[,] CanvasBody = new char[0,0];
+        public char[,] CanvasBody = new char[' ',' '];
 
         public Canvas(int _width, int _height) {
             _width += 2;
