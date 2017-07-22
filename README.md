@@ -1,6 +1,8 @@
 # Simple-Canvas-Program
 This is a simple .Net Core 1.1 console application of a drawing program that enables the user to draw
-in a canvas(i.e draw a line, draw a rectangle, bucketfill). It uses xUnit for testing.
+in a canvas(i.e draw a line, draw a rectangle, bucketfill). It uses xUnit for testing. 
+
+This project was done using Test Driven Development.
 
 In a nutshell, the program work as follows:
  1. Create a new canvas
@@ -78,12 +80,23 @@ In a nutshell, the program work as follows:
             |     xoooooooooooooo|
             ----------------------
             
-      This will do a fill to all the surroundings of x,y = 3 just like in paint programs.
+      This will do a fill to all the surroundings of x,y = 3 just like in paint programs. 
       
 * The last command that we will use is the command to quit the program:
       * SYNTAX : Q
       
             enter command: Q
             
-            
+## Technical Requirements
+  1. .Net Core 1.1 Framework
+  2. To debug, use Visual Studio 2017.
+  3. Install xUnit if needed.
+
 ## Assumptions
+  1. .Net Core Framework framework was used to implement this program, assuming that the server where this program will be deployed will also have a .net core 1.1 framework installed.
+  2. The program was designed as simple as possible, assuming that for this exercise, it will be judged in a wholistic approach  that includes, but not limited to, requirements gathering, testability, maintainability, scalability.
+  3. Visual Studio 2017 was used to develop the program, assuming that Visual Studio 2017 also will be used for future development.
+  
+## Limitiations
+ * The maximum width of the canvas was set to 77 in the app-settings.json file to have a better rendering when used via command prompt.
+ * Lines and Rectangles will be drawn using "X" as default.
