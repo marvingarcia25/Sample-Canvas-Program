@@ -101,3 +101,4 @@ In a nutshell, the program work as follows:
  * The maximum width of the canvas was set to 77 in the app-settings.json file to have a better rendering when used via command prompt.
  * Lines and Rectangles will be drawn using "X" as default.
  * No logging yet
+ * The Bucket fill functionality is limited to use 1 char only. If command like "B 10 3 GH" was used, only "G" will be used to fill the canvas
