@@ -13,6 +13,7 @@ In a nutshell, the program work as follows:
 * Below are the following Commands available:
 	
 	* C - create a canvas
+	
 			SYNTAX: 		C <Width> <Height>
 			Description: 	This will create a canvas with the following <Width> and <Height>
 			Example:		C 20 4 - will create a canvas with width = 20 and height = 4.
@@ -20,13 +21,14 @@ In a nutshell, the program work as follows:
 	NOTE: axis(x,y) - refers to a point in the canvas
 	
 	* L - draw a line
+	
 			SYNTAX:			L <x1> <y1> <x2> <y2>
-			Description:	This will draw a line from axis(x1,y1) to axis(x2,y2).
+			Description:		This will draw a line from axis(x1,y1) to axis(x2,y2).
 			Example:		L 1 2 6 2 - will create a line from axis(1,2) to axis(6,2).
 	* R - draw a rectangle
+	
 			SYNTAX:			R <x1> <y1> <x2> <y2>
-			Description:	This will draw a rectangle with the upper left corner = axis(x1,y1) and
-							lower right corner = axis(x2,y2)
+			Description:		This will draw a rectangle with the upper left corner = axis(x1,y1) and lower right corner = axis(x2,y2)
 			Example:		R 14 1 18 3	- will create a rectangle with the upper left corner = axis(14,1) and
 							lower right corner = axis(18,3)		
 	* B - bucketfill , just like ms paint bucketfill functionality
