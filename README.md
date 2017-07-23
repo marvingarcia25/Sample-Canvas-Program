@@ -47,6 +47,11 @@ In a nutshell, the program work as follows:
 			- SYNTAX: 		Q
 			- Description		This will quit the program and remove everything that is stored in the memory.
 			- Example:		Q
+	- help - show instructions
+	
+			- SYNTAX:		help
+			- Description		This will show the instructions on how to use the program
+			- Example:		help
 	
 * At first we need to create a canvas that we can use to draw. 
 
