@@ -15,7 +15,7 @@ namespace SimpleCanvasProgram.Processes
             try
             {
                 String[] cmd = command.Split(' ');
-                string ch = cmd[0];// GET the first command
+                string ch = cmd[0].ToUpper();// GET the first command
 
                 switch (ch)
                 {
@@ -76,7 +76,7 @@ namespace SimpleCanvasProgram.Processes
                                );
                         process.Render(canvas);
                         break;
-                    case "help":
+                    case "HELP":
 
                         Console.WriteLine("Below are the following Commands available:");
                         Console.WriteLine("- C - create a canvas");
@@ -130,7 +130,7 @@ namespace SimpleCanvasProgram.Processes
             catch (Exception e)
             {
                 //TODO: log here
-                Console.WriteLine(" Error Occured\n Please contact your system administrator. \n You may also use the help command.");
+                Console.WriteLine("Error Occured\nPlease contact your system administrator. \nYou may also use the help command.");
             }
 
             return canvas;

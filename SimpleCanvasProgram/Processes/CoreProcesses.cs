@@ -31,6 +31,7 @@ namespace SimpleCanvasProgram.Processes
 
             if (width < 0 || height < 0)
             {
+                Console.WriteLine("InvalidCanvasWidthAndHeightException");
                 throw new Exception("InvalidCanvasWidthAndHeightException");
             }
 
@@ -53,6 +54,12 @@ namespace SimpleCanvasProgram.Processes
 
         public Canvas DrawLine(int x1, int y1, int x2, int y2, char mchar, Canvas createdCanvas)
         {
+            if (x1 > createdCanvas.Width || x2 > createdCanvas.Width || y1 > createdCanvas.Height || y2 > createdCanvas.Height ||
+                x1 < 0 || x2 < 0 || y1 < 0 || y2 < 0)
+            {
+                Console.WriteLine("InvalidLinePointsException");
+                throw new IndexOutOfRangeException("InvalidLinePointsException");
+            }
             for (int i = y1; i <= y2; i++)
             {
                 for (int j = x1; j <= x2; j++)
@@ -65,6 +72,12 @@ namespace SimpleCanvasProgram.Processes
 
         public Canvas DrawRectangle(int x1, int y1, int x2, int y2, char mchar, Canvas createdCanvas)
         {
+            if (x1 > createdCanvas.Width || x2 > createdCanvas.Width || y1 > createdCanvas.Height || y2 > createdCanvas.Height ||
+                 x1 < 0 || x2 < 0 || y1 < 0 || y2 < 0)
+            {
+                Console.WriteLine("InvalidLineRectanglePointsException");
+                throw new IndexOutOfRangeException("InvalidLineRectanglePointsException");
+            }
             createdCanvas = DrawLine(x1, y1, x2, y1, mchar, createdCanvas);
             createdCanvas = DrawLine(x1, y1, x1, y2, mchar, createdCanvas);
             createdCanvas = DrawLine(x2, y1, x2, y2, mchar, createdCanvas);
@@ -75,7 +88,8 @@ namespace SimpleCanvasProgram.Processes
 
         public Canvas BucketFillUtil(int x, int y, char oldchar, char mchar,  Canvas createdCanvas)
         {
-        		if(createdCanvas.CanvasBody[y,x] != oldchar) {
+
+            if (createdCanvas.CanvasBody[y,x] != oldchar) {
         			return createdCanvas;
         		}
 
@@ -99,6 +113,11 @@ namespace SimpleCanvasProgram.Processes
 
         public Canvas BucketFill(int x, int y, char mchar, Canvas createdCanvas)
         {
+            if (x > createdCanvas.Width || y > createdCanvas.Height || x <= 0 || y <= 0)
+            {
+                Console.WriteLine("InvalidPointsException");
+                throw new IndexOutOfRangeException("InvalidPointsException");
+            }
             char oldChar = createdCanvas.CanvasBody[y, x];
             BucketFillUtil(x, y, oldChar, mchar, createdCanvas);
 
