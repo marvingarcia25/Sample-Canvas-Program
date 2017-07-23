@@ -1,0 +1,10 @@
+Command is case sensitive
+Drawline is limited to horizontal and vertical only. diagonal is not implemented
+Explain further give description 
+Add Lookup for commands
+<commands> <x1-axis>,<y1-axis>,<x2-axis>,<y2-axis>
+What are the acceptable characters
+Add instruction for create new canvas without quitting the program.
+ 
+ 
+ 

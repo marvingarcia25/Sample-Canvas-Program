@@ -7,19 +7,18 @@ using System.IO;
 
 namespace SimpleCanvasProgram
 {
-    class Program
+    public class Program
     {
-        public static IConfigurationRoot Configuration { get; set; }
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-         
-
             Canvas canvas = null;
             String command = string.Empty;
-            
+            Console.WriteLine("***************************************************");
+            Console.WriteLine("****************Simple Canvas App******************");
+            Console.WriteLine("***************************************************");
             while (!command.ToUpper().Equals("Q"))
             {
-                Console.WriteLine("enter command:");
+                Console.WriteLine("Enter command:");
                 command = Console.ReadLine();
                 canvas = CommandAnalyzer.Analyzer(command, canvas);
             }
