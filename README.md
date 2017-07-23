@@ -58,7 +58,7 @@ In a nutshell, the program work as follows:
             
             enter command: C 20 4
      
-* We will notice that a canvas was created as below:
+* The canvas below will be created:
 
             enter command: C 20 4
             ----------------------
