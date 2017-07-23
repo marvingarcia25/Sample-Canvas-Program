@@ -90,7 +90,7 @@ In a nutshell, the program work as follows:
             ----------------------
       
       The first command will draw a line from axis(1,2) to axis(6,2).
-      The second command will draw a line from axis(1,2) to axis(6,2).
+      The second command will draw a line from axis(6,3) to axis(6,4).
     
 * To draw a rectangle, use the command below:
 
@@ -117,21 +117,23 @@ In a nutshell, the program work as follows:
             ----------------------
             
       This will do a bucketfill to all the surroundings of axis(x,y) with 'o' just like in paint programs. 
-      
+
+* To clear the canvas again, just recreate the canvas using the create command.
+
+		enter command: C 20 4
+		----------------------
+		|                    |
+		|                    |
+		|                    |
+		|                    |
+		----------------------
+
 * The last command that we will use is the command to quit the program:
       * SYNTAX : Q
       
             enter command: Q
             
-* To clear the canvas again, just recreate the canvas using the create command.
 
-			enter command: C 20 4
-            ----------------------
-            |                    |
-            |                    |
-            |                    |
-            |                    |
-            ----------------------
 ## Technical Requirements
   1. .Net Core 1.1 Framework
   2. To debug, use Visual Studio 2017.
@@ -139,7 +141,7 @@ In a nutshell, the program work as follows:
 
 ## Assumptions
   1. L and R commands assumed that the X and Y axis are below or equal the width and height of the created canvas. Otherwise it will throw an error.
-  2. .Net Core Framework framework was used to implement this program, assuming that the server where this program will be deployed will also have a .net core 1.1 framework installed.
+  2. .Net Core Framework was used to implement this program, assuming that the server where this program will be deployed will also have a .net core 1.1 framework installed.
   3. The program was designed as simple as possible, assuming that for this exercise, it will be judged in a wholistic approach  that includes, but not limited to, requirements gathering, testability, maintainability, scalability.
   4. Visual Studio 2017 was used to develop the program, assuming that Visual Studio 2017 also will be used for future development.
   5. The user is assumed that he/she knows how bucketfill works in mspaint programs.
@@ -147,6 +149,5 @@ In a nutshell, the program work as follows:
 ## Limitiations
  * The maximum width of the canvas was set to 77 in the app-settings.json file to have a better rendering when used via command prompt.
  * Lines and Rectangles will be drawn using "X" as default.
- * No logging yet
  * The Bucket fill functionality is limited to use 1 char only. If command like "B 10 3 GH" was used, only "G" will be used to fill the canvas
  * Drawline is limited to horizontal and vertical lines only. Diagonal lines are currently not supported.
