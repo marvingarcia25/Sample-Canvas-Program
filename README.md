@@ -134,7 +134,7 @@ In a nutshell, the program work as follows:
 
 ## Assumptions
   1. L and R commands assumed that the X and Y axis are below or equal the width and height of the created canvas. Otherwise it will throw an error.
-  2 .Net Core Framework framework was used to implement this program, assuming that the server where this program will be deployed will also have a .net core 1.1 framework installed.
+  2. .Net Core Framework framework was used to implement this program, assuming that the server where this program will be deployed will also have a .net core 1.1 framework installed.
   3. The program was designed as simple as possible, assuming that for this exercise, it will be judged in a wholistic approach  that includes, but not limited to, requirements gathering, testability, maintainability, scalability.
   4. Visual Studio 2017 was used to develop the program, assuming that Visual Studio 2017 also will be used for future development.
   5. The user is assumed that he/she knows how bucketfill works in mspaint programs.
