@@ -10,43 +10,43 @@ In a nutshell, the program work as follows:
  3. Quit
  
 ## Instructions 
+- NOTE: axis(x,y) - refers to a point in the canvas
 * Below are the following Commands available:
 	
-	* C - create a canvas
-	
-			SYNTAX-		        C <Width> <Height>	
-			Description-		This will create a canvas with the following <Width> and <Height>	
-			Example-		C 20 4 - will create a canvas with width = 20 and height = 4.
+	- C - create a canvas
 			
-	NOTE: axis(x,y) - refers to a point in the canvas
-	
-	* L - draw a line
-	
-			SYNTAX-			L <x1> <y1> <x2> <y2>		
-			Description-		This will draw a line from axis(x1,y1) to axis(x2,y2).
-			Example-		L 1 2 6 2 - will create a line from axis(1,2) to axis(6,2).
+			- SYNTAX: 		C Width Height
+			- Description		This will create a canvas with the following Width and Height	
+			- Example:		C 20 4 - will create a canvas with width = 20 and height = 4.
 			
-	* R - draw a rectangle
 	
-			SYNTAX-			R <x1> <y1> <x2> <y2>
-			Description-		This will draw a rectangle with the upper left corner = axis(x1,y1) and lower right 
+	- L - draw a line
+	
+			- SYNTAX:		L x1 y1 x2 y2		
+			- Description		This will draw a line from axis(x1,y1) to axis(x2,y2).
+			- Example:		L 1 2 6 2 - will create a line from axis(1,2) to axis(6,2).
+			
+	- R - draw a rectangle
+	
+			- SYNTAX:		R x1 y1 x2 y2
+			- Description		This will draw a rectangle with the upper left corner = axis(x1,y1) and lower right 
 						corner = axis(x2,y2)
-			Example-		R 14 1 18 3 - will create a rectangle with the upper left corner = axis(14,1) and 
+			- Example:		R 14 1 18 3 - will create a rectangle with the upper left corner = axis(14,1) and 
 						lower right corner = axis(18,3)		
 			
-	* B - bucketfill , just like ms paint bucketfill functionality
+	- B - bucketfill , just like ms paint bucketfill functionality
 	
-			SYNTAX-			B <x> <y> <charToUse>
-			Description-		This will do a fill to all the surroundings of x,y = axis(x,y) with <charToUse> just
+			- SYNTAX:		B x y 
+			- Description		This will do a fill to all the surroundings of x,y = axis(x,y) with charToUse just
 						like in paint programs. 
-						<charToUse> can be any single alpha numeric character.
-			Example-		B 10 3 o- will do a bucketfill to all the surroundings of axis(10,3) with 'o' just like
+						charToUse can be any single alpha numeric character.
+			- Example:		B 10 3 o- will do a bucketfill to all the surroundings of axis(10,3) with 'o' just like
 						in paint programs.
-	* Q - quit the program
+	- Q - quit the program
 	
-			SYNTAX- 		Q
-			Description-		This will quit the program and remove everything that is stored in the memory.
-			Example-		Q
+			- SYNTAX: 		Q
+			- Description		This will quit the program and remove everything that is stored in the memory.
+			- Example:		Q
 	
 * At first we need to create a canvas that we can use to draw. 
 
